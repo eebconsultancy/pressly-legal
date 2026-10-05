@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pressly — Legal & Support</title>
+
+  <meta
+    name="description"
+    content="Official legal and support information for Pressly Blood Pressure Tracker."
+  >
+
+  <meta name="theme-color" content="#014B5C">
+
+  <style>
+    :root {
+      --petrol: #014B5C;
+      --petrol-dark: #003844;
+      --coral: #E9685D;
+      --cream: #F7F1E8;
+      --paper: #FCFAF6;
+      --ink: #173238;
+      --muted: #687C80;
+      --border: rgba(1, 75, 92, 0.12);
+      --white: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .hero {
+      background:
+        linear-gradient(
+          145deg,
+          var(--petrol) 0%,
+          var(--petrol-dark) 100%
+        );
+
+      color: var(--white);
+      text-align: center;
+      padding: 88px 24px 82px;
+    }
+
+    .heart {
+      width: 82px;
+      height: 82px;
+      margin: 0 auto 24px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: var(--coral);
+      border-radius: 50%;
+
+      font-size: 38px;
+
+      box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.18);
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 66px);
+      line-height: 1;
+      letter-spacing: -2px;
+      font-weight: 750;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 0 auto;
+
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 18px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 48px;
+    }
+
+    .intro h2 {
+      font-size: 30px;
+      letter-spacing: -0.7px;
+      margin-bottom: 12px;
+    }
+
+    .intro p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      display: block;
+
+      padding: 30px;
+
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+
+      color: inherit;
+      text-decoration: none;
+
+      box-shadow:
+        0 8px 28px rgba(1, 75, 92, 0.055);
+
+      transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 14px 36px rgba(1, 75, 92, 0.09);
+    }
+
+    .card-icon {
+      width: 44px;
+      height: 44px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 22px;
+
+      border-radius: 12px;
+
+      background: rgba(1, 75, 92, 0.08);
+      color: var(--petrol);
+
+      font-size: 21px;
+      font-weight: 700;
+    }
+
+    .card h3 {
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .support {
+      margin-top: 44px;
+      padding: 30px;
+
+      text-align: center;
+
+      background: var(--cream);
+      border-radius: 20px;
+    }
+
+    .support h3 {
+      margin-bottom: 8px;
+      font-size: 21px;
+    }
+
+    .support p {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .support a {
+      color: var(--petrol);
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 28px 24px 40px;
+      text-align: center;
+
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      .hero {
+        padding: 68px 20px 64px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding-top: 48px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="heart" aria-hidden="true">♥</div>
+
+    <h1>Pressly</h1>
+
+    <p>
+      Simple, thoughtful tools for tracking your blood pressure
+      and understanding your heart health over time.
+    </p>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <h2>Legal & Support</h2>
+
+      <p>
+        Find Pressly's privacy information, terms of use,
+        and support contact details.
+      </p>
+    </section>
+
+    <section class="cards">
+
+      <a class="card" href="privacy.html">
+        <div class="card-icon" aria-hidden="true">P</div>
+
+        <h3>Privacy Policy</h3>
+
+        <p>
+          Learn how Pressly handles health information,
+          app data, permissions, and your privacy.
+        </p>
+      </a>
+
+      <a class="card" href="terms.html">
+        <div class="card-icon" aria-hidden="true">T</div>
+
+        <h3>Terms of Use</h3>
+
+        <p>
+          Review the terms that apply when using
+          Pressly and its features.
+        </p>
+      </a>
+
+    </section>
+
+    <section class="support">
+      <h3>Need help?</h3>
+
+      <p>
+        For questions, support, or privacy inquiries,
+        contact EEB Consultancy LLC.
+      </p>
+
+      <a href="mailto:info@eebconsultancyllc.com">
+        info@eebconsultancyllc.com
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 EEB Consultancy LLC. All rights reserved.
+  </footer>
+
+</body>
+</html>
